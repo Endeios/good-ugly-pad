@@ -17,4 +17,10 @@ Notice the lambdas (the Pad) that do the padding and the unpadding of the payloa
 
 ##Python example
 
+The python example is made from the class ugly.Ugly: this class is first initialized with the shared password and the
+initialization vector. Then is simulated the arrival of an externa exchanged key: this key is assumed to be randomic and encrypetd wit the shared key. The key is then decryped, and the corresponding (random) client key is obtained.
+In the next step the client key is used to encrypt a password used for login.
+
 ##Groovy Example
+
+The groovy example does the same as python, but notice that no padding is explicitly added or evicted from the payload: the crypto module does everithing on its own (so we do not make errors). As before the Good class is instanced with a password , an initialization vector and a crypto algorithm. The encrypted key exchange is simulated and the client key is obtained. The client key is then used to encrypt a password for login
