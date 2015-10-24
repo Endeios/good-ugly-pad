@@ -13,7 +13,8 @@ Let's say that the interaction of the protocol is an instance the so called "dou
 
 Let's see how it would have been done, in Groovy and in Python
 
-Notice the lambdas (the Pad) that do the padding and the unpadding of the payload! It is the usual (https://en.wikipedia.org/wiki/Padding_%28cryptography%29#PKCS7) [PKCS(5|7)] , but one has to remember to do it or the communication will break, especially with small payloads.
+Notice the lambdas (the Pad) that do the padding and the unpadding of the payload! It is the usual [PKCS(5|7)](https://en.wikipedia.org/wiki/Padding_%28cryptography%29#PKCS7), 
+but one has to remember to do it or the communication will break, especially with small payloads.
 
 ##Python example
 
